@@ -1,0 +1,102 @@
+/* LOADING PAGE */
+
+/* loader */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    width: 50px;
+    height: 5px;
+   background: linear-gradient(to right, #e22929, #0689d1);
+    position: absolute;
+    top: 200px;
+    animation: anim 4s infinite;
+    border-radius: 10px;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right,
+        #8e2de2,
+        #4a00e0);
+    animation: anim2 2s infinite;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    bottom: 50px;
+    right: 0;
+    border-radius: 50%;
+    background: linear-gradient(to right,
+            #8e2de2,
+            #4a00e0);
+    animation: anim3 2s infinite;
+}
+
+@keyframes anim{
+    0%,100%{
+        transform: rotate(0deg);}
+    50%{
+        transform: rotate(360deg);}
+    }
+@keyframes anim2{
+    0%,100%{transform: translateY();}
+    50%{transform: translateY(-45px) translateX(20px);
+        width: 10px; height: 10px;
+    }
+}
+@keyframes anim3 {
+    0%, 100% {transform: translateY();}
+    50%{
+        transform: translateY(45px) translateX(-20px);
+        width: 10px; height: 10px;
+    }
+}
+
+    /* Hover Button */
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.a1{
+    text-decoration-line: none;
+}
+.btn{
+    background: #171717;
+    width: 220px;
+    height: 60px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    transition: all .4s;
+    border-radius: 5px;
+    box-shadow: 0.8px 2px whitesmoke;
+}
+.btn:hover{
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+    0 15px 0 -4px #39a2db,
+    0 16px 10px -3px #39a2db;
+}
+
+    

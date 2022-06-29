@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-color: #dec3c3;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box img{
+    width: 150px;
+    height: 200px;
+    box-shadow: 20px 0px 20px rgba(234, 204, 204, 0.3);
+    background: rgb(233, 223, 223);
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .book-img {
+    width: 150px;
+    height: 200px;
+    transform-origin: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    transition: transform .4s;
+} */
+
+.box:hover img {
+    transform: scale(0.8);
+    height: 180px;
+}
+
+
+/* Nav Bar */
+.topnav {
+    background-color: #ff7979;
+    overflow: hidden;
+    margin-bottom: 4%;
+    /* * transform: translate(-45%, 0%); */
+}
+
+.topnav a {
+    float: left;
+    color: #0e0a0a;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #d4e1dc;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #d4e1dc;
+    color: rgb(128, 7, 7);
+    /* font-display: inherit; */
+}
